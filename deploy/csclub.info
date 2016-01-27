@@ -1,0 +1,13 @@
+name = CsClub
+description = ojojo
+package = Core
+version = VERSION
+core = 7.x
+
+regions[main] = Main
+
+stylesheets[all][] = css/styles.min.css
+
+scripts[] = js/jquery-starfield.js
+scripts[] = js/cs.js
+
