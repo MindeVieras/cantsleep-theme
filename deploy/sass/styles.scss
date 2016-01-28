@@ -135,6 +135,69 @@ body{
     }
   }
 }
+/*user menu block*/
+#block-system-user-menu{
+  position: absolute;
+  top:0;
+  left: 40%;
+  h2{
+    display: none;
+  }
+  ul.menu{
+    text-align: center;
+    margin: 0px;
+    padding:0px;
+    li{
+      display: inline-block;
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+/*tea products block*/
+#block-views-tea-products-block{
+  text-align: center;
+  h2{
+    display: none;
+  }
+  .tea-product{
+    background-color: rgba(226,216,201,.2);
+    background-image: url(..images/jar.svg);
+    cursor: pointer;
+    text-align: center;
+    font-family: 'pacifico';
+    font-size: 40px;
+    color: #fff;
+    margin: 25px;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border:5px solid rgb(226,216,201);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    transition: background-color .5s ease;
+    &:hover{
+      background-color:rgba(226,216,201,.4);
+    }
+    .views-field-title{
+      width:70%;
+      margin: 0 auto;
+    }
+    .views-label-commerce-price,
+    .views-field-field-description,
+    .views-field-field-image,
+    .views-field-add-to-cart-form{
+      display: none;
+    } 
+  }
+}
+/*shoping car block*/
 .block-commerce-cart{
   position:absolute;
   bottom: 0;

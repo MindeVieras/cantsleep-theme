@@ -170,7 +170,83 @@ body.page-node-8 {
   color: #fff;
 }
 
-/* line 138, ../sass/styles.scss */
+/*user menu block*/
+/* line 139, ../sass/styles.scss */
+#block-system-user-menu {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+/* line 143, ../sass/styles.scss */
+#block-system-user-menu h2 {
+  display: none;
+}
+/* line 146, ../sass/styles.scss */
+#block-system-user-menu ul.menu {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 150, ../sass/styles.scss */
+#block-system-user-menu ul.menu li {
+  display: inline-block;
+}
+/* line 152, ../sass/styles.scss */
+#block-system-user-menu ul.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*tea products block*/
+/* line 160, ../sass/styles.scss */
+#block-views-tea-products-block {
+  text-align: center;
+}
+/* line 162, ../sass/styles.scss */
+#block-views-tea-products-block h2 {
+  display: none;
+}
+/* line 165, ../sass/styles.scss */
+#block-views-tea-products-block .tea-product {
+  background-color: rgba(226, 216, 201, 0.2);
+  background-image: url(..images/jar.svg);
+  cursor: pointer;
+  text-align: center;
+  font-family: 'pacifico';
+  font-size: 40px;
+  color: #fff;
+  margin: 25px;
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  border: 5px solid #e2d8c9;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color .5s ease;
+  -moz-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+/* line 185, ../sass/styles.scss */
+#block-views-tea-products-block .tea-product:hover {
+  background-color: rgba(226, 216, 201, 0.4);
+}
+/* line 188, ../sass/styles.scss */
+#block-views-tea-products-block .tea-product .views-field-title {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 192, ../sass/styles.scss */
+#block-views-tea-products-block .tea-product .views-label-commerce-price,
+#block-views-tea-products-block .tea-product .views-field-field-description,
+#block-views-tea-products-block .tea-product .views-field-field-image,
+#block-views-tea-products-block .tea-product .views-field-add-to-cart-form {
+  display: none;
+}
+
+/*shoping car block*/
+/* line 201, ../sass/styles.scss */
 .block-commerce-cart {
   position: absolute;
   bottom: 0;
@@ -179,7 +255,7 @@ body.page-node-8 {
 }
 
 /*messages*/
-/* line 145, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 div.messages {
   position: absolute;
   bottom: 0;
