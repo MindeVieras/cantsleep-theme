@@ -1,34 +1,38 @@
 @font-face {
-  font-family: 'pacifico';
-  src: url(pacifico.ttf);
+  font-family: pacifico;
+  src: url("fonts/pacifico.ttf");
 }
-/* line 5, ../sass/styles.scss */
+@font-face {
+  font-family: gausssian;
+  src: url("fonts.gaussian-blur.ttf");
+}
+/* line 9, ../sass/styles.scss */
 html {
   height: 100%;
 }
 
-/* line 8, ../sass/styles.scss */
+/* line 12, ../sass/styles.scss */
 body {
   background: none;
   width: 100%;
   height: 100%;
   margin: 0;
 }
-/* line 13, ../sass/styles.scss */
+/* line 17, ../sass/styles.scss */
 body.front {
   background: url(../images/bg.jpg) no-repeat center center fixed;
   margin: 0px;
   overflow: hidden;
   background-size: cover;
 }
-/* line 19, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 body.page-node-7 {
   background: url(../images/moon-bg.jpg) no-repeat center center fixed;
   margin: 0px;
   overflow: hidden;
   background-size: cover;
 }
-/* line 25, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 body.page-node-8 {
   background: url(../images/shop-bg.jpg) no-repeat center center fixed;
   margin: 0px;
@@ -36,12 +40,12 @@ body.page-node-8 {
   background-size: cover;
 }
 
-/* line 32, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 #block-system-main {
   display: none;
 }
 
-/* line 35, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 .main-link {
   position: absolute;
   margin: 0;
@@ -50,7 +54,7 @@ body.page-node-8 {
   width: 300px;
   display: none;
 }
-/* line 42, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .main-link a {
   font-family: 'pacifico';
   font-size: 1.5em;
@@ -59,25 +63,33 @@ body.page-node-8 {
   text-shadow: 0 0 2px #fff;
   text-decoration: none;
 }
-/* line 49, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .main-link a div:before, .main-link a div:after {
   content: '"';
 }
 
 /*main menu*/
-/* line 56, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 #block-system-main-menu h2 {
   display: none;
 }
-/* line 59, ../sass/styles.scss */
-#block-system-main-menu li {
+/* line 63, ../sass/styles.scss */
+#block-system-main-menu ul.menu {
+  list-style: none;
+}
+/* line 65, ../sass/styles.scss */
+#block-system-main-menu ul.menu li {
   margin: 0;
   padding: 0;
 }
-/* line 63, ../sass/styles.scss */
-#block-system-main-menu a {
-  background-image: url(../images/corner.png);
-  height: 146px;
+/* line 68, ../sass/styles.scss */
+#block-system-main-menu ul.menu li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 72, ../sass/styles.scss */
+#block-system-main-menu ul.menu li a {
+  height: 150px;
   width: 150px;
   font-family: 'pacifico';
   font-size: 1.25em;
@@ -86,75 +98,88 @@ body.page-node-8 {
   text-decoration: none;
   text-align: center;
 }
-/* line 73, ../sass/styles.scss */
-#block-system-main-menu a.active {
-  display: none;
-}
-/* line 78, ../sass/styles.scss */
-#block-system-main-menu li.first a {
+/* line 82, ../sass/styles.scss */
+#block-system-main-menu ul.menu li.first a {
+  background-image: url(../images/corner_left.svg);
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 82, ../sass/styles.scss */
-#block-system-main-menu li.first a .front-menu-link {
+/* line 87, ../sass/styles.scss */
+#block-system-main-menu ul.menu li.first a .front-menu-link {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari */
   transform: rotate(-45deg);
+  /* Standard syntax */
 }
-/* line 89, ../sass/styles.scss */
-#block-system-main-menu li.last a {
+/* line 96, ../sass/styles.scss */
+#block-system-main-menu ul.menu li.last a {
+  background-image: url(../images/corner_right.svg);
   position: absolute;
   top: 0;
   right: 0;
-  transform: scaleX(-1);
-  filter: FlipH;
 }
-/* line 95, ../sass/styles.scss */
-#block-system-main-menu li.last a .front-menu-link {
+/* line 101, ../sass/styles.scss */
+#block-system-main-menu ul.menu li.last a .front-menu-link {
   position: absolute;
-  top: 20px;
-  right: 70px;
-  transform: rotate(-45deg) scaleX(-1);
-  filter: FlipH;
+  top: 10px;
+  right: 0px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari */
+  transform: rotate(45deg);
+  /* Standard syntax */
 }
 
 /*user login form*/
-/* line 106, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 #block-user-login {
   position: absolute;
   top: 0px;
   left: 40%;
 }
-/* line 110, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 #block-user-login h2 {
   display: none;
 }
-/* line 113, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 #block-user-login .form-item {
   display: inline-block;
 }
-/* line 115, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 #block-user-login .form-item label {
   display: none;
 }
-/* line 118, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 #block-user-login .form-item ul {
   list-style: none;
 }
-/* line 121, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 #block-user-login .form-item li {
   display: inline;
 }
-/* line 124, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 #block-user-login .form-item a {
   text-decoration: none;
   color: #fff;
 }
 
+/* line 138, ../sass/styles.scss */
+.block-commerce-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+}
+
 /*messages*/
-/* line 131, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 div.messages {
   position: absolute;
   bottom: 0;

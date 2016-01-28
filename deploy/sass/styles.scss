@@ -1,6 +1,10 @@
 @font-face {
-    font-family: 'pacifico';
-    src: url(pacifico.ttf);
+    font-family: pacifico;
+    src: url('fonts/pacifico.ttf');
+}
+@font-face {
+    font-family: gausssian;
+    src: url('fonts.gaussian-blur.ttf');
 }
 html{
   height:100%;
@@ -56,48 +60,52 @@ body{
   h2{
     display:none;
   }
-  li{
-    margin:0;
-    padding:0;
-  }
-  a{
-    background-image: url(../images/corner.png);
-    height:146px;
-    width:150px;
-    font-family: 'pacifico';
-    font-size: 1.25em;
-    color: #000;
-    text-shadow:0 0 1px #fff;
-    text-decoration: none;
-    text-align: center;
-    &.active{
-      display:none;
-    }
-  }
-  li{
-    &.first a{
-      position: absolute;
-      top:0;
-      left:0;
-      .front-menu-link{
-        position: absolute;
-        top:20px;
-        left:0px;
-        transform: rotate(-45deg);
+  ul.menu{
+    list-style: none;
+    li{
+      margin:0;
+      padding:0;
+      &.leaf{
+        list-style-image: none;
+        list-style-type: none;
       }
-    }
-    &.last a{
-      position: absolute;
-      top:0;
-      right:0;
-      transform: scaleX(-1);
-      filter: FlipH;
-      .front-menu-link{
+      a{
+        height:150px;
+        width:150px;
+        font-family: 'pacifico';
+        font-size: 1.25em;
+        color: #000;
+        text-shadow:0 0 1px #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      &.first a{
+        background-image: url(../images/corner_left.svg);
         position: absolute;
-        top:20px;
-        right:70px;
-        transform: rotate(-45deg) scaleX(-1);
-        filter: FlipH;
+        top:0;
+        left:0;
+        .front-menu-link{
+          position: absolute;
+          top:10px;
+          left:0px;
+          -ms-transform: rotate(-45deg); /* IE 9 */
+          -webkit-transform: rotate(-45deg); /* Safari */
+          transform: rotate(-45deg); /* Standard syntax */
+        }
+      }
+      &.last a{
+        background-image: url(../images/corner_right.svg);
+        position: absolute;
+        top:0;
+        right:0;
+        .front-menu-link{
+          position: absolute;
+          top:10px;
+          right:0px;
+          -ms-transform: rotate(45deg); /* IE 9 */
+          -webkit-transform: rotate(45deg); /* Safari */
+          transform: rotate(45deg); /* Standard syntax */
+        }
       }
     }
   }
@@ -126,6 +134,12 @@ body{
       color:#fff;
     }
   }
+}
+.block-commerce-cart{
+  position:absolute;
+  bottom: 0;
+  right:0;
+  width:25%;
 }
 /*messages*/
 div.messages {

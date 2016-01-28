@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 	    },
 	    src: 'deploy',
 	    dest: '/cantsleep/sites/all/themes/custom/csclub',
-	    exclusions: ['deploy/sass', 'deploy/images', 'deploy/scripts', 'deploy/css/styles.css', 'deploy/screenshot.png']
+	    exclusions: ['deploy/sass', 'deploy/images', 'deploy/scripts', 'deploy/css/styles.css', 'deploy/css/fonts', 'deploy/screenshot.png']
 	  }
 	},
 	watch: {
