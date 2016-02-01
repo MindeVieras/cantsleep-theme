@@ -4,7 +4,10 @@ package = Core
 version = VERSION
 core = 7.x
 
+regions[header] = Header
 regions[main] = Main
+regions[help] = Help
+regions[footer] = Footer
 
 stylesheets[all][] = css/styles.min.css
 

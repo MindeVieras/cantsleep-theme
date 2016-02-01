@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 			tasks: ['compass', 'cssmin']
 		},
 		ftp: {
-			files: ['deploy/csclub.info', 'deploy/css/*.css', 'deploy/scripts/*.js', 'deploy/templates/*.php'],
+			files: ['deploy/csclub.info', 'deploy/css/*.css', 'deploy/scripts/*.js', 'deploy/templates/*.php', 'deploy/template.php'],
 			tasks: ['ftp-deploy:build']
 		}
 	}
